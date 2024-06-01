@@ -8,6 +8,7 @@ a {
 
 }
     .caja-enlace {
+    display: block;
     border: 1px solid lightblue;
     padding: 5px;
     margin: 5px;
