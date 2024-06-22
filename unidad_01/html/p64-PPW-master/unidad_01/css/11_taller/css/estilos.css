@@ -27,7 +27,7 @@
 .content {
     grid-area: content;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
 .footer {
@@ -37,8 +37,10 @@
 .item1, .item2, .item3, .item4, .item5 {
     border: 1px solid black;
     height: fit-content;
+    width: fit-content;
     padding: 20px;
     font-size: 20px;
     color: aliceblue;
     font-weight: bolder;
+    text-align: center;
 }
