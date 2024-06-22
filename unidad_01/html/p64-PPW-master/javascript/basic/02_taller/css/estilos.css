@@ -24,6 +24,7 @@
     grid-area: left;
     display: flex;
     flex-direction: column;
+    grid-gap: 5px;
 }
 
 .content {
@@ -53,4 +54,8 @@
 .item-button {
     font-size: 20px;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    font-size: 20px;
 }
