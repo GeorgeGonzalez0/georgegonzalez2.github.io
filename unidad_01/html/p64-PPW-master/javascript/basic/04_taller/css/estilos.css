@@ -55,3 +55,21 @@
     font-size: 20px;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
 }
+
+.item-opcion {
+    border: 2px solid lightgray;
+    position: absolute;
+    top: 180px;
+    width: 300px;
+    height: 300px;
+}
+
+#opcion_01 {
+    background-color: lawngreen;
+    z-index: 2;
+}
+
+#opcion_02 {
+    background-color: lightskyblue;
+    z-index: 1;
+}
