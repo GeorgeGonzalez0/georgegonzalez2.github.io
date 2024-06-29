@@ -1,6 +1,6 @@
 
 // Creacion de un objeto de manera estatica
-Let mi carro = {
+let mi_carro = {
     marca: 'Mazda',
     modelo: 'MZX-2000'
     anio: 2024,
@@ -13,4 +13,14 @@ console.log( mi_carro.marca )
 console.log( mi_carro.detalle_auto() )
 
 // Creacion de un objeto de manera dinamica
+function Carro(marca, modelo, anio) {
+    this.marca = marca
+    this.modelo = modelo
+    this.detalle_auto = fuction() {
+        console.log( `Auto: ${this.marca}-${this.modelo}. Año: $(this.anio).` )
+    }
+}
 
+
+let mi_carro2 = new Carro('Ford', 'Explorer', 2024)
+mi_carro2.detalle_auto()
