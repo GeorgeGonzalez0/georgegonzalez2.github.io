@@ -1,20 +1,37 @@
-const URL = "https://gateway.marvel.com:443/v1/public/characters";
+const URL = 'https://rickandmortyapi.com/api/character/'
 var xhttp = null
 
-const publicKey = "ea1bdd33bc6e4f522865590d3437966a";
-const privateKey = "d64650e4aae877bc3c07b56d1636664a910bd2e7";
+function obtener_personajes() {
+    for (let i=1; i<=10; i++) {
+        conectar(i)
+    }
+}
 
-// Generar ts
-var ts = new Date().getTime().toString();
-// Generar hash md5
-var hash = CryptoJS.MD5(ts + privateKey + publicKey).toString();
+function conectar(personaje) {
+    xhttp = new XMLHttpRequest()
+    xhttp.onreadystatechange = obtener_respuesta
+    xhttp.open('GET', URL + personaje, true)
+    xhttp.send()
+}
 
-var params = {
-    ts: ts,
-    apikey: publicKey,
-    hash: hash,
-    limit: 10  // Por ejemplo, obtener los primeros 10 personajes
-};
+var personaje = ''
 
+function obtener_respuesta() {
+    if (xhttp != null && xhttp.readyState == 4) {
+        if (xhttp.status == 200) {
+            let dato =  JSON.parse(xhttp.responseText)
+            console.log(dato)
 
-function conectar(personaj
+            let container = document.getElementById('container')
+            let container_item = document.createElement('div')
+            let img = document.createElement('img')
+            img.src = dato.image
+            let h1 = document.createElement('h1')
+            let name = document.createTextNode( dato.name )
+            h1.appendChild(name)
+            container_item.appendChild(img)
+            container_item.appendChild(h1)
+            container.appendChild(container_item)
+        }
+    }
+}
