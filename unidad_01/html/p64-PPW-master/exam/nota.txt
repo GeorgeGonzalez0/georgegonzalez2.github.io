@@ -1,0 +1,24 @@
+Estas son las intrucciones:
+*Desarrollar una página web estática que muestre una lista de recetas con la posibilidad de agregar nuevas recetas.
+*Introducir la manipulación básica del DOM y la gestión de eventos en JavaScript.
+*Aplicar estilos básicos utilizando CSS.
+
+HTML: Estructuración de la Página (3 puntos)
+
+*Creación de la estructura básica del documento HTML.
+*Uso de etiquetas semánticas como <header>, <main>, <footer>.
+*Creación de formularios para agregar recetas.
+*Uso de listas (<ul> y <li>) para mostrar las recetas.
+
+CSS: Estilización Básica de la Página (3 puntos)
+
+*Diseño básico de la página.
+*Estilización de formularios y botones.
+*Aplicación de estilos a las recetas.
+*Uso básico de colores, márgenes y paddings.
+
+JavaScript: Interactividad Básica (4 puntos)
+
+*Selección de elementos del DOM.
+*Manejo básico de eventos (clic, submit).
+*Adición de nuevas recetas a la lista.
